@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+* {
+  font-family: 'Montserrat', 'sans-serif';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #59e;
+}
+
+/* -- LOGIN SECTION -- */
+header#loginHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #59e;
+  width: 100vw;
+}
+
+div#loginCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+div#loginCard form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div#loginCard form div.formBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#loginCard form div.formBlock input {
+  margin: 1vh 0;
+  padding: 1ch;
+  border: 1px solid #888;
+  border-radius: 10px;
+  outline: none;
+}
+
+div#loginCard form div.formBlock input:focus {
+  border-color: #59e;
+  -webkit-box-shadow: 0 0 8px #59e;
+          box-shadow: 0 0 8px #59e;
+}
+
+button.submitButton {
+  border: none;
+  outline: none;
+  background-color: #59e;
+  padding: 1ch;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 1vh 0;
+}
+
+button.submitButton:hover {
+  background-color: #277de9;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+h1#loginTitle {
+  color: #59e;
+  text-transform: uppercase;
+  font-size: 28pt;
+  margin: 4vh 0;
+}
+
+/* -- Home -- */
+nav.nav {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  position: relative;
+  width: 100vw;
+}
+
+nav.nav a {
+  text-decoration: none;
+}
+
+nav.nav a span {
+  color: #59e;
+  font-weight: bold;
+}
+
+nav.nav a span#sair {
+  font-weight: bold;
+  color: #ff6666;
+}
+
+nav.nav h2 {
+  width: 50%;
+  margin: 0;
+  color: #59e;
+}
+
+section.mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+}
+
+div.pagTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2em 1em;
+}
+
+div.pagTitle h2 {
+  color: #fff;
+  margin: 0;
+}
+
+div.pagTitle div.divider {
+  height: 4px;
+  margin: 0.5em 0;
+  background-color: #fff;
+  width: 10ch;
+  border-radius: 10px;
+}
+
+div.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  div.content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+div.content a {
+  text-decoration: none;
+}
+
+div.content div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 285px;
+  height: 210px;
+  margin: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 2em;
+}
+
+div.content div.card h2 {
+  margin: 0;
+  width: 50%;
+  text-align: center;
+  color: #59e;
+}
+
+div.content div.card:hover {
+  -webkit-box-shadow: 0 8px 0 #FA4;
+          box-shadow: 0 8px 0 #FA4;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+/* Formulários */
+div.cardForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 360px;
+  margin: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 2em;
+}
+
+@media screen and (max-width: 320px) {
+  div.cardForm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 285px;
+  }
+}
+
+div.cardForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.cardForm form div.formBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em 0;
+}
+
+div.cardForm form div.formBlock label {
+  color: #59e;
+  font-weight: bold;
+}
+
+div.cardForm form div.formBlock input {
+  margin: 1vh 0;
+  padding: 1ch;
+  border: 1px solid #888;
+  border-radius: 10px;
+  outline: none;
+}
+
+div.cardForm form div.formBlock input:focus {
+  border-color: #59e;
+  -webkit-box-shadow: 0 0 8px #59e;
+          box-shadow: 0 0 8px #59e;
+}
+
+div.cardForm form div.formBlock select {
+  margin: 1vh 0;
+  padding: 1ch;
+  border: 1px solid #888;
+  border-radius: 10px;
+  outline: none;
+}
+
+div.cardForm form div.formBlock select:focus {
+  border-color: #59e;
+  -webkit-box-shadow: 0 0 8px #59e;
+          box-shadow: 0 0 8px #59e;
+}
+
+div.cardForm form div.formBlock option:focus {
+  background-color: #59e;
+}
+
+/* Estoque */
+div.cardEstoque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 285px;
+  height: 210px;
+  margin: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 2em;
+}
+
+div.cardEstoque h2 {
+  margin: 0;
+  color: #59e;
+}
+
+div.cardEstoque div.titleEstoque span {
+  color: #59e;
+  font-size: 1.25em;
+}
+
+div.cardEstoque div.dateEstoque {
+  color: #59e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.cardEstoque:hover {
+  -webkit-box-shadow: 0 8px 0 #FA4;
+          box-shadow: 0 8px 0 #FA4;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+/*# sourceMappingURL=main.css.map */

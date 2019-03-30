@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro peças</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+</head>
+<body>
+        <nav class="nav">
+                <a href="cadastro.html"><span>Voltar</span></a>
+                <a href="../index.html"><span id="sair">Sair</span></a>
+            </nav>
+        
+            <section class="mainWrapper">
+                <div class="pagTitle">
+                    <h2>Cadastrando peça.</h2>
+                    <div class="divider"></div>
+                </div>
+            
+                <div class="content">
+                    <div class="cardForm">
+                        <form action="">
+                            <div class="formBlock">
+                                <label>Modelo da peça:</label>
+                                <input type="text" name="modelPeca" placeholder="Digite o modelo da peça" required>
+                            </div>
+                            <div class="formBlock">
+                                <label>Descrição:</label>
+                                <input type="number" name="descPeca" placeholder="Digite a descrição da peça" required>
+                            </div>
+                            <div class="formBlock">
+                                <label>Valor unitário (R$):</label>
+                                <input type="number" name="precoPeca" placeholder="Use '.' ao inves de ','" required>
+                            </div>
+                            <div class="formBlock">
+                                <label>Quantidade:</label>
+                                <input type="number" name="qntPeca" placeholder="Digite a quantidade de peças" required>
+                            </div>
+                            <div class="formBlock">
+                                <label>Pacote:</label>
+                                <select name="pacote" required>
+                                    <option value="hering1">Hering1</option>
+                                    <option value="hering2">Hering2</option>
+                                    <option value="lupo1">Lupo1</option>
+                                </select>
+                            </div>
+                            <button class="submitButton">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+</body>
+</html>

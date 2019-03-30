@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+
+*{
+    font-family: 'Montserrat', 'sans-serif';
+    box-sizing: border-box;
+}
+$primary: #59e;
+$w: #fff;
+$b: #000;
+
+body{
+    margin: 0;
+    background-color: $primary;
+}
+
+
+
+/* -- LOGIN SECTION -- */
+
+header#loginHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $primary;
+    width: 100vw;
+}
+
+div#loginCard{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $w;
+    background-color: $w;
+    border-radius: 10px;
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        div.formBlock{
+            display: flex;
+            flex-direction: column;
+            
+            input{
+                margin: 1vh 0;
+                padding: 1ch;
+                border: 1px solid #888;
+                border-radius: 10px;
+                outline: none;
+            }
+            input:focus{
+                border-color: $primary;
+                box-shadow: 0 0 8px $primary;
+            }
+        }
+    }
+}
+
+button.submitButton{
+    border: none;
+    outline: none;
+    background-color: $primary;
+    padding: 1ch;
+    color: $w;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 1vh 0;
+    
+}
+button.submitButton:hover{
+    background-color: darken($primary, 10%);
+    color: $w;
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+h1#loginTitle{
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 28pt;
+    margin: 4vh 0;
+}
+
+
+/* -- Home -- */
+
+nav.nav{
+    background-color: $w;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: relative;
+    width: 100vw;
+
+    a{
+        text-decoration: none;
+    }
+
+    a span{
+        color: $primary;
+        font-weight: bold;
+    }
+
+    a span#sair{
+        font-weight: bold;
+        color: lighten(red, 20%);
+    }
+    h2{
+        width: 50%;
+        margin: 0;
+        color: $primary;
+    }
+
+}
+
+section.mainWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+div.pagTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em 1em;
+    h2{
+        color: $w;
+        margin: 0;
+    }
+    div.divider{
+        height: 4px;
+        margin: 0.5em 0;
+        background-color: $w;
+        width: 10ch;
+        border-radius: 10px;
+    }
+}
+
+div.content{
+    display: flex;
+    width: 100vw;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    
+    @media screen and (max-width: 1000px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    div.card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 285px;
+        height: 210px;
+        margin: 1em;
+        background-color: $w;
+        border-radius: 10px;
+        box-shadow: none;
+        padding: 2em;
+
+
+        h2{
+            margin: 0;
+            width: 50%;
+            text-align: center;
+            color: $primary;
+        }
+    }
+    div.card:hover{
+        box-shadow: 0 8px 0 #FA4;
+        transition-duration: 0.5s;
+        transition-delay: 0;
+    }
+}
+
+/* Formulários */
+
+div.cardForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 360px;
+    @media screen and (max-width: 320px) {
+        justify-content: center;
+        align-items: center;
+        width: 285px;
+    }
+    margin: 1em;
+    background-color: $w;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 2em;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        div.formBlock{
+            display: flex;
+            flex-direction: column;
+            margin: 1em 0;
+            
+            label{
+                color: $primary;
+                font-weight: bold;
+            }
+
+            input{
+                margin: 1vh 0;
+                padding: 1ch;
+                border: 1px solid #888;
+                border-radius: 10px;
+                outline: none;
+            }
+
+            input:focus{
+                border-color: $primary;
+                box-shadow: 0 0 8px $primary;
+            }
+
+            select{
+                margin: 1vh 0;
+                padding: 1ch;
+                border: 1px solid #888;
+                border-radius: 10px;
+                outline: none;
+            }
+            select:focus{
+                border-color: $primary;
+                box-shadow: 0 0 8px $primary;
+            }
+
+            option:focus{
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+/* Estoque */
+
+div.cardEstoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 285px;
+    height: 210px;
+    margin: 1em;
+    background-color: $w;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 2em;
+
+    h2{
+        margin: 0;
+        color: $primary;
+    }
+    div.titleEstoque span{
+        color: $primary;
+        font-size: 1.25em;
+    }
+    div.dateEstoque{
+        color: $primary;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+div.cardEstoque:hover{
+    box-shadow: 0 8px 0 #FA4;
+    transition-duration: 0.5s;
+    transition-delay: 0; 
+}
